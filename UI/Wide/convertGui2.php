@@ -185,7 +185,7 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
 
         <br><br>
 
-        <div id='buttonDiv<?php echo $ConvertGuiCounter1; ?>' name='buttonDiv<?php echo $ConvertGuiCounter1; ?>' style='height:25px;'>
+        <div id='buttonDiv<?php echo $ConvertGuiCounter1; ?>' name='buttonDiv<?php echo $ConvertGuiCounter1; ?>' style='height:45px;'>
           <a style='float:<?php echo $GUIAlignment; ?>;'>&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
           <img id='downloadfilebutton<?php echo $ConvertGuiCounter1; ?>' name='downloadfilebutton<?php echo $ConvertGuiCounter1; ?>' src='<?php echo $GuiImageDir; ?>download.png' style='float:<?php echo $GUIAlignment; ?>; display:block;' onclick='toggle_visibility("loadingCommandDiv<?php echo $ConvertGuiCounter1; ?>");' title='<?php echo $Gui2Text5.' '.$File; ?>' alt='<?php echo $Gui2Text5.' '.$File; ?>'/>

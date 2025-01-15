@@ -166,7 +166,10 @@ $blueButtonCode = '.info-button {
 select {
   background: url("'.$GuiImageDir.'darrowblue.png") 96% / 15% no-repeat #eee; }
 body { 
-  background-color: #E1F7FF; }';
+  background-color: #888888; 
+  background-image: url("'.$GuiImageDir.'grey_wash_wall.png");
+  
+  }';
 
 // / Red color scheme.
 $redButtonCode = '.info-button {

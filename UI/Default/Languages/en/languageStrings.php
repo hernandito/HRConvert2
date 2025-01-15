@@ -61,7 +61,7 @@ if ($FileCount == 1) {
 // / -----------------------------------------------------------------------------------
 // / Set GUI - Header Related Variables.
 // / 'Click, Tap, or Drop files here to upload.'
-$GuiHeaderText1 = 'Click, Tap, or Drop files here to upload.';
+$GuiHeaderText1 = 'Click, Tap, or Drop Files Here';
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------

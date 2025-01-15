@@ -35,7 +35,7 @@
     // / -----------------------------------------------------------------------------------
 
     if ($ShowFinePrint) { ?>
-    <div id='footer' name='footer' style='max-width:1000px; margin-left:auto; margin-right:auto; text-align:center;'>
+    <div id='footer' name='footer' style='max-width:800px; margin-left:auto; margin-right:auto; text-align:center; font-size: 8px;'>
       <p><?php echo $GuiFooterText1; ?></a></p>
     </div>
   <?php } ?>

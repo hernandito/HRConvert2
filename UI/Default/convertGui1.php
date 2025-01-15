@@ -39,18 +39,22 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
   <body>
     <?php
     if (!isset($_GET['noGui'])) { ?>
-    <div id='header-text' style='max-width:1000px; margin-left:auto; margin-right:auto; text-align:center;'>
-      <h1><?php echo $ApplicationName; ?></h1>
+	
+<div style= "background-color: #fff; margin: 20px; width: 500px; color: #777777; margin-left:auto; margin-right:auto; padding: 20px; border-radius: 12px; -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,.2);
+box-shadow: 1px 1px 5px 5px rgba(0,0,0,.3);">
+	
+    <div id='header-text' style='max-width:500px; margin-left:auto; margin-right:auto; text-align:left;'>
+      <h1><img src='<?php echo $GuiImageDir; ?>convert-banner.png' style='max-height:72px; margin-right: 10px;'/><?php //echo $ApplicationName; ?></h1>
       <h3><?php echo $Gui1Text1; ?></h3>
-      <hr />
+      <hr style="border: 1px solid #eeeeee;"/>
     </div>
-    <div id='main' align='center'>
-      <div id='overview' style='max-width:1000px; text-align:<?php echo $GUIAlignment; ?>; margin:25px;'><?php echo $Gui1Text2; ?>
+    <div id='main' align='left'>
+      <div id='overview' style='max-width:500px; text-align: left; font-size: 14px;'><?php echo $Gui1Text2; ?>
         <p id='info' style='display:block;'></p>
         <button id='more-info-button' class='info-button' onclick='toggle_visibility("more-info"); toggle_visibility("more-info-button"); toggle_visibility("supported-formats-show-button"); toggle_visibility("less-info-button");' style='text-align:center; display:block; margin-left:auto; margin-right:auto;'><?php echo $Gui1Text3; ?></button>
         <button id='less-info-button' class='info-button' onclick='toggle_visibility("more-info"); toggle_visibility("more-info-button"); toggle_visibility("supported-formats-show-button"); toggle_visibility("less-info-button");' style='text-align:center; display:none; margin-left:auto; margin-right:auto;'><?php echo $Gui1Text4; ?></button>
         <div id='more-info' style='display:none;'>
-          <hr />
+      <hr style="border: 1px solid #eeeeee;"/>
           <p><?php echo $Gui1Text5; ?></p>
           <p><?php echo $Gui1Text6; ?></p>
           <button id='supported-formats-show-button' class='info-button' onclick='toggle_visibility("supported-formats"); toggle_visibility("supported-formats-show-button"); toggle_visibility("supported-formats-hide-button");' style='text-align:center; display:none; margin-left:auto; margin-right:auto;'><?php echo $Gui1Text7; ?></button>
@@ -58,7 +62,7 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
           <br>
           <div id='supported-formats' class='supported-formats' style='margin-left:33%; display:none;'>
             <h3><?php echo $Gui1Text9; ?></h3>
-            <hr />
+               <hr style="border: 1px solid #eeeeee;"/>
             <?php if (in_array('Audio', $SupportedConversionTypes)) { ?>
             <strong><?php echo $Gui1Text10; ?></strong>
             <p><i><?php echo $Gui1Text11; ?></i></p>
@@ -166,7 +170,7 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
             <?php } ?>
           </div>
         </div>
-        <hr />
+        <hr style="border: 1px solid #eeeeee;"/>
       </div>
       <?php } ?>
       <div align='center'>
@@ -175,7 +179,7 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
         </div>
       </div>
       <div align='center'>
-        <div id='dropzone' style='max-height:1000px; max-width:1000px; margin:25px;'>
+        <div id='dropzone' style='max-height:800px; max-width:1000px; margin:25px;'>
           <form action='convertCore.php' class='dropzone' id='filesToUpload' name='filesToUpload' method='post' enctype='multipart/form-data'>
           <input type='hidden' id='token1' name='Token1' value='<?php echo $Token1; ?>'>
           <input type='hidden' id='token2' name='Token2' value='<?php echo $Token2; ?>'>
@@ -183,7 +187,7 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
         </div>
       </div>
       <div align='center'>
-        <div id='continue' style='max-width:1000px; text-align:center;'>
+        <div id='continue' style='max-width:500px; text-align:center;'>
           <form action='convertCore.php?showFiles=1<?php if (isset($_GET['noGui'])) echo '&noGui=TRUE'; if (isset($_GET['language'])) echo '&gui='.$_GET['gui']; if (isset($_GET['language'])) echo '&language='.$_GET['language']; if (isset($_GET['color'])) echo '&color='.$_GET['color']; ?>' method='post'>
             <input type='hidden' id='token1' name='Token1' value='<?php echo $Token1; ?>'>
             <input type='hidden' id='token2' name='Token2' value='<?php echo $Token2; ?>'>
@@ -191,13 +195,14 @@ $gui2AudArr = $gui2VidArr = $gui2StreamArr = $gui2DocArr = $gui2SpreadArr = $gui
           </form>
           <br />
           <?php if (!isset($_GET['noGui'])) { ?>
-          <hr />
+			<hr style="border: 1px solid #eeeeee;"/>
           <?php } ?>
         </div>
       </div>
 
     <?php if (!isset($_GET['noGui'])) { ?>
     </div>
+<div>	
     <?php }
     // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
     $gui1AudArr = $gui1VidArr = $gui1StreamArr = $gui1DocArr = $gui1SpreadArr = $gui1PresArr = $gui1ArchArr = $gui1ImaArr = $gui1ModArr = $gui2SubArr = $gui1DraArr = NULL;
