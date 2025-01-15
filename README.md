@@ -5,7 +5,9 @@
 
 ### A self-hosted drag-and-drop file conversion server & file sharing tool that supports 445 file formats with 4 color schemes & 13 end-user selectable languages. 
 
- <img src="https://raw.githubusercontent.com/hernandito/HRConvert/new-webui.png" > 
+ <img src="https://github.com/hernandito/HRConvert2/blob/master/new-webui.png" > 
+
+
 
 ![HRConvert2](https://github.com/zelon88/HRConvert2/blob/master/Documentation/Screenshots/HRConvert2-1.png)
 
